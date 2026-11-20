@@ -1,0 +1,27 @@
+﻿# Freqtrade user data, databases & logs
+user_data/config.json
+user_data/config_*.json
+user_data/*.sqlite
+user_data/*.sqlite-journal
+user_data/logs/
+user_data/data/
+user_data/backtest_results/
+user_data/plot/
+user_data/notebooks/
+
+# FreqAI trained models & caches
+user_data/models/
+*.joblib
+*.pkl
+
+# Environment & secrets
+.env
+*.pem
+*.key
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+__pycache__/
+*.pyc

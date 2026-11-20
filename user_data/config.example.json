@@ -1,0 +1,119 @@
+﻿{
+  "$schema": "https://schema.freqtrade.io/schema.json",
+  "_comment": "Minimal example blueprint. Get the full Bitvavo EUR, Global USDT & FreqAI LightGBM templates at https://vermeerist2.gumroad.com/l/freqtrade-freqai-starter-kit",
+  "max_open_trades": 3,
+  "stake_currency": "USDT",
+  "stake_amount": 50,
+  "tradable_balance_ratio": 0.99,
+  "fiat_display_currency": "EUR",
+  "timeframe": "30m",
+  "dry_run": true,
+  "dry_run_wallet": 1000,
+  "cancel_open_orders_on_exit": false,
+  "exchange": {
+    "name": "binance",
+    "key": "YOUR_EXCHANGE_API_KEY",
+    "secret": "YOUR_EXCHANGE_SECRET_KEY",
+    "ccxt_config": {},
+    "ccxt_async_config": {},
+    "pair_whitelist": [
+      "BTC/USDT",
+      "ETH/USDT",
+      "SOL/USDT"
+    ],
+    "pair_blacklist": []
+  },
+  "pairlists": [
+    {
+      "method": "StaticPairList"
+    }
+  ],
+  "entry_pricing": {
+    "price_side": "same",
+    "use_order_book": true,
+    "order_book_top": 1
+  },
+  "exit_pricing": {
+    "price_side": "same",
+    "use_order_book": true,
+    "order_book_top": 1
+  },
+  "api_server": {
+    "enabled": true,
+    "listen_ip_address": "0.0.0.0",
+    "listen_port": 8080,
+    "verbosity": "error",
+    "jwt_secret_key": "CHANGE_THIS_TO_A_RANDOM_SECRET_STRING",
+    "ws_token": "CHANGE_THIS_TO_A_RANDOM_WS_TOKEN",
+    "CORS_origins": [],
+    "username": "freqtrader",
+    "password": "CHANGE_THIS_PASSWORD"
+  },
+  "bot_name": "FreqAI_Starter_Blueprint",
+  "initial_state": "running",
+  "force_entry_enable": false,
+  "internals": {
+    "process
+
+Set-Location "$HOME\Documents\freqtrade-freqai-starter-kit"
+
+# 5. user_data/config.example.json volledig wegschrijven
+@'
+{
+  "$schema": "https://schema.freqtrade.io/schema.json",
+  "_comment": "Minimal example blueprint. Get the full Bitvavo EUR, Global USDT & FreqAI LightGBM templates at https://vermeerist2.gumroad.com/l/freqtrade-freqai-starter-kit",
+  "max_open_trades": 3,
+  "stake_currency": "USDT",
+  "stake_amount": 50,
+  "tradable_balance_ratio": 0.99,
+  "fiat_display_currency": "EUR",
+  "timeframe": "30m",
+  "dry_run": true,
+  "dry_run_wallet": 1000,
+  "cancel_open_orders_on_exit": false,
+  "exchange": {
+    "name": "binance",
+    "key": "YOUR_EXCHANGE_API_KEY",
+    "secret": "YOUR_EXCHANGE_SECRET_KEY",
+    "ccxt_config": {},
+    "ccxt_async_config": {},
+    "pair_whitelist": [
+      "BTC/USDT",
+      "ETH/USDT",
+      "SOL/USDT"
+    ],
+    "pair_blacklist": []
+  },
+  "pairlists": [
+    {
+      "method": "StaticPairList"
+    }
+  ],
+  "entry_pricing": {
+    "price_side": "same",
+    "use_order_book": true,
+    "order_book_top": 1
+  },
+  "exit_pricing": {
+    "price_side": "same",
+    "use_order_book": true,
+    "order_book_top": 1
+  },
+  "api_server": {
+    "enabled": true,
+    "listen_ip_address": "0.0.0.0",
+    "listen_port": 8080,
+    "verbosity": "error",
+    "jwt_secret_key": "CHANGE_THIS_TO_A_RANDOM_SECRET_STRING",
+    "ws_token": "CHANGE_THIS_TO_A_RANDOM_WS_TOKEN",
+    "CORS_origins": [],
+    "username": "freqtrader",
+    "password": "CHANGE_THIS_PASSWORD"
+  },
+  "bot_name": "FreqAI_Starter_Blueprint",
+  "initial_state": "running",
+  "force_entry_enable": false,
+  "internals": {
+    "process_throttle_secs": 5
+  }
+}
